@@ -11,6 +11,10 @@ const Home = () => {
         <img className="Home__header__mountains" src={mountains} alt="Mountains" />
       </header>
       <main className="Home__main">
+        <section className="Home__main__intro">
+          <h1>Trop Beau: Biker's Edition</h1>
+          <p>a portfolio-adventure</p>
+        </section>
         <section className="Home__main__game">
           <div className="Home__main__game__biker" />
           <div className="Home__main__game__road" />
