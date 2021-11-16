@@ -1,3 +1,6 @@
+@import '../../styles/mixins';
+@import '../../styles/colors';
+
 @keyframes moving {
 	from {
 		transform: translateX(0);
@@ -56,7 +59,7 @@
 			top: 5%;
 			width: 120px;
 			height: 120px;
-
+			@include unselectable;
 			@media (min-width: 768px ) {
 				left: 50%;
 				width: 200px;
@@ -67,6 +70,7 @@
 			width: 170%;
 			height: 20vh;
 			align-self: flex-end;
+			@include unselectable;
 			@media (min-width: 768px ) {
 				width: 100%;
 			}
@@ -80,9 +84,10 @@
 			position: absolute;
 			bottom: 200px;
 			padding: 1em;
-			background: yellow;
+			background: $yellow;
 			opacity: .4;
 			text-align: center;
+			@include unselectable;
 			animation: happening-title-mobile 5s linear;
 			@media (min-width: 768px ) {
 				animation: happening-title 5s linear;
