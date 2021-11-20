@@ -1,0 +1,49 @@
+@import '../../../../../styles/colors';
+@import '../../../../../styles/fonts';
+
+.BurgerMaker {
+	width: 800px;
+	background: $pale-brown;
+	margin-top: 5em;
+	border-radius: 5px;
+	&__factory {
+		min-height: 50vh;
+		background: $brown;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1em;
+		flex-wrap: wrap;
+		&__head {
+			width: 100%;
+			padding: 4em 2em 2em 2em;
+			background: $light-red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			&__title {
+				font-family: '04b_30';
+				font-size: 3em;
+				color: $white;
+			}
+		}
+		&__preview,
+		&__selection,
+		&__order {
+			width: 80%;
+			min-height: 20vh;
+			border: 2px solid white;
+			border-radius: 20px;
+		}
+		&__preview {
+			background: $pale-brown;
+		}
+		&__selection {
+			
+		}
+		&__order {
+
+		}
+	}
+}

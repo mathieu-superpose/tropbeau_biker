@@ -1,0 +1,55 @@
+@import '../../../../../styles/colors';
+@import '../../../../../styles/fonts';
+
+.Selector {
+	background: $red;
+	padding: 2em;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+	&__head {
+		&__title {
+			font-family: '04b_30';
+			font-size: 2em;
+			color: $orange;
+			filter: drop-shadow(3px 3px 0px $white);
+		}
+	}
+	&__bun,
+	&__sauce,
+	&__patty,
+	&__cheese,
+	&__salad,
+	&__tomato {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: .5em;
+		& button {
+			background: none;
+			border: none;
+			& figure {
+				width: 90px;
+				height: 90px;
+				padding: .5em;
+				background: $white;
+				border-radius: 5px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: .3em;
+				opacity: .7;
+				text-align: center;
+				&:hover {
+					opacity: .8;
+				}
+				& figcaption {
+					font-size: .6em;
+				}
+			}
+		}
+	}
+}

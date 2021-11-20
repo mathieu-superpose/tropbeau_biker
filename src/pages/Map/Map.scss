@@ -21,6 +21,13 @@
 		position: relative;
 		top: 50px;
 		z-index: 17;
+		&__location {
+			position: absolute;
+			top: -70px;
+			left: 20px;
+			color: $white;
+			text-align: center;
+		}
 		&__closeBtn {
 			background: none;
 			border: none;

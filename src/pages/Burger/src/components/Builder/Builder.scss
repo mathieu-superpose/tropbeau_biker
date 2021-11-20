@@ -1,0 +1,42 @@
+.Builder {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	padding: 2em;
+	--padding: 0;
+	&:hover {
+		--padding: 1em;
+	}
+	&__top,
+	&__tomato,
+	&__cheese,
+	&__patty,
+	&__salad,
+	&__bottom {
+		width: 250px;
+		transition: padding .5s ease-out;
+		padding: var(--padding);
+	}
+	&__top {
+		margin-bottom: -1em;
+	}
+	&__tomato {
+		margin-top: -1em;
+		margin-bottom: -1em;
+	}
+	&__cheese {
+		margin-top: -1em;
+		margin-bottom: -4.7em;
+	}
+	&__patty {
+		margin-top: -1em;
+		margin-bottom: -2em;
+	}
+	&__salad {
+		margin-top: -1em;
+		margin-bottom: -3em;
+	}
+	&__bottom {
+		margin-top: -1em;
+	}
+}
