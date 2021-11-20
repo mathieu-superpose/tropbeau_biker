@@ -1,0 +1,36 @@
+@import '../../../../../styles/colors';
+
+.BurgerNavbar {
+	position: sticky;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1em;
+	background: $pale-brown;
+	z-index: 2;
+	&__menu,
+	&__cart {
+		font-size: 1.2em;
+	}
+	&__menu {
+		color: $brown;
+	}
+	&__logo {
+		position: relative;
+		top: 15px;
+		height: 90px;
+		width: 95px;
+		display: flex;
+		justify-content: center;
+		background: $pale-brown;
+		border-radius: 40% / 20% ;
+		&__bk {
+			height: 80px;
+		}	
+	}
+	&__cart {
+		color: $red;
+	}
+}
