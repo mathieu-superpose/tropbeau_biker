@@ -7,16 +7,14 @@ const MiniMap = ({ switchModalMap }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-    setPrevScrollPos(currentScrollPos);
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+    window.addEventListener('scroll', () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    });
+    
+  }, [prevScrollPos, visible]);
 
   const handleMapClick = () => {
     switchModalMap.toggle()
